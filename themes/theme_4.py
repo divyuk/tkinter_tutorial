@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 
-
 root = tk.Tk()
 style = ttk.Style(root)
 
@@ -9,7 +8,7 @@ name = ttk.Label(root, text="Hello, world!")
 name.pack()
 
 # This tells us the elements within a widget
-print(style.layout("TLabel")) # The layout we are referring here is label in ThemeLabel
+print(style.layout("TLabel"))  # The layout we are referring here is label in ThemeLabel
 
 # This tells us the modifiable properties of each element.
 # Something _really_ important is that these can be different per-theme.
@@ -39,5 +38,5 @@ style.configure("TLabel", bordercolor="#f00")
 style.configure("TLabel", borderwidth=40)
 style.configure("TLabel", relief="solid")
 # More info: https://stackoverflow.com/a/39416145/1587271
-
+# Relief: https://www.tutorialspoint.com/python/tk_relief.htm
 root.mainloop()
